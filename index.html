@@ -173,11 +173,11 @@
       <!--enterance-->
       <a-entity id="spots" hotspots>
         <a-entity id="group-enterance">
-          <a-image spot="linkto:#reception;spotgroup:group-reception;infogroup:infogroup-reception;infoparent:infogroup-enterance" position="-10 0 0"></a-image>
+          <a-image spot="linkto:#reception;spotgroup:group-reception;infogroup:infogroup-reception;infoparent:infogroup-enterance" position="10 0 0"></a-image>
         </a-entity>
         <a-entity id="group-reception" scale="0 0 0">
-          <a-image spot="linkto:#enterance;spotgroup:group-enterance;infogroup:infogroup-enterance;infoparent:infogroup-reception" position="10 0 2"></a-image>
-          <a-image spot="linkto:#enhall;spotgroup:group-enhall;infogroup:infogroup-enhall;infoparent:infogroup-reception" position="-10 0 -2"></a-image>
+          <a-image spot="linkto:#enterance;spotgroup:group-enterance;infogroup:infogroup-enterance;infoparent:infogroup-reception" position="-10 0 -2"></a-image>
+          <a-image spot="linkto:#enhall;spotgroup:group-enhall;infogroup:infogroup-enhall;infoparent:infogroup-reception" position="10 0 2"></a-image>
         </a-entity>
 
         <a-entity id="group-enhall" scale="0 0 0">
@@ -226,7 +226,7 @@
                  animation__fadein="property:material.opacity;to:1;dur:2000;startEvents:camFadeIn"
                  animation__fadeout="property:material.opacity;to:0;dur:200;startEvents:camFadeOut"></a-plane>
       </a-entity>
-      <a-sky id="skybox" src="#room1"></a-sky>
+      <a-sky id="skybox" src="#enterance"></a-sky>
     </a-scene>
     <script>
       var ccam=document.getElementById("cam");
